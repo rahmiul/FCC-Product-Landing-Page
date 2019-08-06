@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://use.fontawesome.com/releases/v5.1.1/css/all.css");
+
+:root {
+    --purple-color: RGB(78, 61, 102);
+    --purlepale-color: RGB(110, 90, 130);
+    --grey-color: RGB(168, 168, 168);
+    --orange-color: RGB(237, 108, 5);
+}
+
+html,
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background: var(--purple-color);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--orange-color);
+    z-index: 1;
+}
+
+.header-logo {
+    width: 60%;
+    display: flex;
+}
+
+#header-img {
+    width: 80px;
+}
+
+#nav-bar {
+    margin: 0px 0px 0px auto;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+#container {
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    margin: 30px 0px;
+    top: 75px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px
+}
+
+#email {
+    width: 270px;
+    height: 25px;
+    padding-left: 3px;
+    margin: 0px 0px 20px 0px;
+}
+
+#submit {
+    border: 2px grey;
+    width: 150px;
+    height: 30px;
+    background-color: var(--orange-color);
+    color: #fff;
+    margin-bottom: 70px
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.icon {
+    margin-right: 75px;
+}
+
+#video {
+    margin-top: 30px;
+}
+
+#price {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+    min-width: 500px;
+}
+
+.boxprice {
+    width: calc(100%/3);
+    margin: 30px 10px;
+    border: 2px solid #fff;
+    background: var(--purple-color);
+    color: #fff;
+    text-align: center;
+}
+
+.boxprice h3 {
+    background-color: var(--grey-color);
+    padding-top: 10px;
+    height: 40px;
+    color: #000;
+}
+
+.boxprice .price {
+    font-size: 24px;
+    width: 100%;
+    display: inline-block;
+    padding: 8px 0px;
+}
+
+.boxprice p {
+    margin: 7px 0px;
+    font-size: 16px;
+}
+
+.select {
+    background-color: var(--orange-color);
+    border: none;
+    color: #fff;
+    height: 30px;
+    width: 100px;
+    font-size: 16px;
+    margin: 20px 0px;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 605px;
+    background-color: var(--purlepale-color);
+    opacity: 0.7;
+    min-height: 70px;
+    top: 60px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    width: 220px;
+    justify-content: space-around;
+    color: #fff;
+}
+
+footer p {
+    padding-right: 20px;
+    padding-top: 5px;
+    color: var(--orange-color);
+}
+
+@media screen and (max-width: 600px) {
+    #header {
+        flex-wrap: wrap;
+    }
+
+    .header-logo {
+        width: 100%;
+        position: relative;
+        justify-content: center;
+    }
+
+    #container {
+        top: 130px;
+    }
+
+    section h1,
+    section p {
+        text-align: center;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    #nav-bar {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    ul {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer {
+        top: 100px;
+    }
+}
